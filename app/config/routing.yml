@@ -1,0 +1,11 @@
+acme_blog:
+    resource: "@AcmeBlogBundle/Resources/config/routing.yml"
+    prefix:   /
+
+acme_hello:
+    resource: "@AcmeHelloBundle/Resources/config/routing.yml"
+    prefix:   /
+
+blog_show:
+    path:      /blog/{slug}
+    defaults:  { _controller: AcmeBlogBundle:Blog:show }
